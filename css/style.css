@@ -18,6 +18,7 @@ body {
   color: #fff;
   background-color: #db3838;
   border: #db3838;
+  cursor: pointer;
 }
 
 .head {
@@ -74,6 +75,7 @@ body {
   height: 52px;
   border: 1px solid #e1e1e1;
   transform: translate(66px, 43px);
+  z-index: 1;
 }
 
 .navbar__element--search {
@@ -145,9 +147,10 @@ body {
   border: none;
   font-size: 14px;
   transform: translate(14px, -1px);
+  outline: none;
 }
 
-.btn-search {
+.btn__search {
   display: inline-block;
   width: 71px;
   height: 54px;
@@ -445,7 +448,7 @@ body {
 
 .tags__gallery {
   position: relative;
-  height: 281px;
+  height: 280px;
   width: 100%;
   display: flex;
 }
@@ -462,7 +465,7 @@ body {
   transform: translate(118px, 59px);
 }
 
-.tags__gallery--captio-fix {
+.tags__gallery--caption-fix {
   transform: translate(124px, 59px);
 }
 
@@ -485,7 +488,7 @@ body {
   justify-content: center;
 }
 
-.tags__gallery--btn {
+.btn__tags--gallery {
   position: relative;
   padding: 10px 35px;
   font-size: 15px;
@@ -500,6 +503,190 @@ body {
   min-width: 700px;
   background-color: #ebebeb;
   left: -712px;
+}
+
+.menWomen {
+  height: 1266px;
+  position: relative;
+  top: -21px;
+}
+
+.menWomen__men--row {
+  position: relative;
+  height: 184px;
+}
+
+.menWomen__women--row {
+  position: relative;
+  height: 176px;
+}
+
+.menWomen__men {
+  display: flex;
+  justify-content: flex-start;
+  max-height: 443px;
+}
+
+.menWomen__women {
+  display: flex;
+  justify-content: flex-start;
+  max-height: 640px;
+}
+
+.menWomen__wrapper {
+  flex: 1;
+  height: 443px;
+  width: 570px;
+  display: flex;
+  margin: 0px 13px;
+  position: relative;
+}
+
+.menWomen__decoration--men::before {
+  content: "";
+  position: absolute;
+  height: 535px;
+  min-width: 700px;
+  background-color: #ebebeb;
+  right: -728px;
+  top: -92px;
+}
+
+.menWomen__decoration--women::before {
+  content: "";
+  position: absolute;
+  height: 543px;
+  min-width: 700px;
+  background-color: #ebebeb;
+  top: -101px;
+  left: -746px;
+}
+
+.menWomen__title {
+  position: relative;
+  display: block;
+  font-size: 25px;
+  left: 11px;
+}
+
+.menWomen__title--men {
+  top: 88px;
+}
+
+.menWomen__title--women {
+  top: 77px;
+}
+
+.menWomen__title::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 372px;
+  background-color: #3a3a3a;
+  height: 3px;
+  top: 23px;
+  left: 2px;
+}
+
+.btn__menWomen {
+  position: absolute;
+  color: #3a3a3a;
+  border-radius: 50%;
+  border: #3a3a3a solid 2px;
+  height: 39px;
+  width: 39px;
+  font-size: 33px;
+  outline: none;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn__menWomen--men {
+  top: 91px;
+}
+
+.btn__menWomen--women {
+  top: 70px;
+}
+
+.btn__menWomen--left {
+  right: 59px;
+}
+
+.btn__menWomen--right {
+  right: 8px;
+}
+
+.menWomen__caption {
+  position: absolute;
+  top: 0;
+  bottom: 47px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.menWomen__caption--title {
+  font-size: 44.86px;
+  font-weight: 300;
+  transform: translateY(8px);
+}
+
+.btn__menWomen--for {
+  font-size: 15px;
+  padding: 23px 91px;
+}
+
+.menWomen__card {
+  flex: 1;
+  position: relative;
+  margin-right: 28px;
+  transform: translateY(2px);
+}
+
+.menWomen__card--caption {
+  transform: translate(-2px, -4px);
+}
+
+.menWomen__card--caption::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 274px;
+  background-color: #3a3a3a;
+  height: 2px;
+  top: 14px;
+  left: -2px;
+}
+
+.menWomen__card--price {
+  margin: 0;
+  font-size: 20px;
+  transform: translateY(2px);
+}
+
+.menWomen__card--opinion {
+  margin: 0;
+  font-size: 13px;
+  transform: translateY(12px);
+}
+
+.menWomen__card--opinion > i {
+  margin-right: 6px;
+}
+
+.btn__menWomen--card {
+  position: absolute;
+  font-size: 16px;
+  bottom: 5px;
+  right: 5px;
+  padding: 10px 18px 9px 20px;
 }
 
 @media (min-width: 768px) and (max-width: 1250px) {
@@ -531,7 +718,7 @@ body {
     left: 0;
     top: 12px;
   }
-  .btn-search {
+  .btn__search {
     position: absolute;
     right: 0;
   }
