@@ -1,7 +1,7 @@
 let i = 0;
 
 function hamburgerButton() {
-    const hamburgerBtn = document.querySelector('.wrapper--hamburger');
+    const hamburgerBtn = document.querySelector('.menu__wrapper--hamburger');
     const hamburgerToggle = document.querySelector('.menu__element')
 
     hamburgerBtn.addEventListener('click', () => {
@@ -30,6 +30,7 @@ function carusel() {
 }
 
 setInterval(function () {
+    console.log('dupa');
     carusel();;
 }, 4000);
 

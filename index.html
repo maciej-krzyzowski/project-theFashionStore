@@ -13,33 +13,36 @@
 
 <body>
 
-    <head>
-        <div class="head display--none">
-            <div class="head__column">
-                <p><i class="fas fa-shopping-cart"></i> FREE SHIPPING ON ALL ORDER </p>
-            </div>
-            <div class="head__column">
-                <p><i class="fas fa-money-bill"></i> 100% MONEY BACK GUARANTEE </p>
-            </div>
-            <div class="head__column">
-                <p><i class="far fa-clock"></i> ONLINE SUPPORT 24/7 </p>
+    <section class="head">
+        <div class="container">
+            <div class="head__wrapper display--none">
+                <div class="head__column">
+                    <p><i class="fas fa-shopping-cart"></i> FREE SHIPPING ON ALL ORDER </p>
+                </div>
+                <div class="head__column head__column--center">
+                    <p><i class="fas fa-money-bill"></i> 100% MONEY BACK GUARANTEE </p>
+                </div>
+                <div class="head__column">
+                    <p><i class="far fa-clock"></i> ONLINE SUPPORT 24/7 </p>
+                </div>
             </div>
         </div>
-    </head>
+    </section>
     <hero>
         <div class="navbar">
             <div class="container">
-                <div class="navbar__row">
-                    <div class="navbar__element navbar__element--logo">
-                        <img class="navbar__element--img" src="/image/Logo.jpg">
+                <div class="navbar__wrapper">
+                    <div class="navbar__logo">
+                        <img class="navbar__img" src="/image/Logo.jpg">
                     </div>
-                    <div class="navbar__element navbar__element--form">
-                        <div class="navbar__element--search">
-                            <input type="text" id="search" placeholder="Search">
+                    <div class="navbar__form">
+                        <div class="navbar__search">
+                            <input class="navbar__search--imput" type="text" id="search" placeholder="Search">
                         </div>
-                        <div class="navbar__element--toggle display--none">
-                            <a href="#">All Categories<i class="fas fa-angle-down"></i></a>
-                            <ul class="navbar__element--list">
+                        <div class="navbar__toggle display--none">
+                            <a href="#" class="navbar__toggle--categories">All Categories<i
+                                    class="fas fa-angle-down"></i></a>
+                            <ul class="navbar__list">
                                 <li>
                                     <a href="#">Hoodies & Sweatshirts</a>
                                 </li>
@@ -57,21 +60,21 @@
                                 </li>
                             </ul>
                         </div>
-                        <button type="button" class="btn btn__search"><i class="fas fa-search"></i></button>
                     </div>
-                    <div class="navbar__element navbar__element--social-media display--none">
-                        <a href="#" class="social-media-icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-media-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-media-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-media-icon"><i class="fab fa-youtube"></i></a>
+                    <button type="button" class="btn btn__search"><i class="fas fa-search"></i></button>
+                    <div class="navbar__social-media display--none">
+                        <a href="#" class="navbar__social-media--icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="navbar__social-media--icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="navbar__social-media--icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="navbar__social-media--icon"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
         </div>
         <nav class="menu">
             <div class="container">
-                <div class="wrapper--hamburger">
-                    <div class="hamburger"></div>
+                <div class="menu__wrapper--hamburger">
+                    <div class="menu__hamburger"></div>
                 </div>
                 <div class="menu__element">
                     <ul>
@@ -99,42 +102,42 @@
                     </ul>
                 </div>
                 <div class="menu__cart">
-                    <a class="menu__item menu__item--cart" href="#"><i class="fas fa-shopping-cart"></i>
+                    <a class="menu__item menu__item--cart" href="#">
+                        <i class="fas fa-shopping-cart"></i>
                         Shopping Cart(0)</a>
                 </div>
             </div>
         </nav>
-        <div class="hero">
+        <div class="carusel">
             <button class="btn__carusel btn__carusel--left"><i class="fas fa-angle-left"></i></button>
             <div class="carusel__item carusel__item--active">
-                <img class="carusel__image" src="/image/Hero/img-hero-1.jpg">
+                <img class="carusel__img" src="/image/Hero/img-hero-1.jpg">
                 <div class="carusel__caption">
-                    <p class="carusel__caption--new">NEW!</p>
-                    <h1>COLLECTION 2016</h1>
-                    <p class="carusel__caption--for">for</p>
-                    <h2>MEN & WOMEN</h2>
+                    <p class="carusel__text--new">NEW!</p>
+                    <h1 class="carusel__text--h1">COLLECTION 2016</h1>
+                    <p class="carusel__text--for">for</p>
+                    <h2 class="carusel__text--h2">MEN & WOMEN</h2>
                 </div>
             </div>
             <div class="carusel__item">
-                <img class="carusel__image" src="/image/Hero/img-hero-2.jpg">
+                <img class="carusel__img" src="/image/Hero/img-hero-2.jpg">
                 <div class="carusel__caption">
-                    <p class="carusel__caption--new">NEW!</p>
-                    <h1>COLLECTION 2016</h1>
-                    <p class="carusel__caption--for">for</p>
-                    <h2>MEN & WOMEN</h2>
+                    <p class="carusel__text--new">NEW!</p>
+                    <h1 class="carusel__text--h1">COLLECTION 2016</h1>
+                    <p class="carusel__text--for">for</p>
+                    <h2 class="carusel__text--h2">MEN & WOMEN</h2>
                 </div>
             </div>
             <div class="carusel__item">
-                <img class="carusel__image" src="/image/Hero/img-hero-3.jpg">
+                <img class="carusel__img" src="/image/Hero/img-hero-3.jpg">
                 <div class="carusel__caption">
-                    <p class="carusel__caption--new">NEW!</p>
-                    <h1>COLLECTION 2016</h1>
-                    <p class="carusel__caption--for">for</p>
-                    <h2>MEN & WOMEN</h2>
+                    <p class="carusel__text--new">NEW!</p>
+                    <h1 class="carusel__text--h1">COLLECTION 2016</h1>
+                    <p class="carusel__text--for">for</p>
+                    <h2 class="carusel__text--h2">MEN & WOMEN</h2>
                 </div>
             </div>
             <button class="btn__carusel btn__carusel--right"><i class="fas fa-angle-right"></i></button>
-        </div>
         </div>
     </hero>
     <section class="tags">
@@ -147,52 +150,51 @@
                             to</p>
                     </li>
                     <li>
-                        <a href="#" class="tags__link tags__link--dots tags__link--women">Women</a>
+                        <a href="#" class="tags__link tags__link--dots">Women</a>
                     </li>
                     <li>
-                        <a href="#" class="tags__link tags__link--dots tags__link--men">Men</a>
+                        <a href="#" class="tags__link tags__link--dots">Men</a>
                     </li>
                     <li>
-                        <a href="#" class="tags__link tags__link--dots tags__link--accesories">Accesories</a>
+                        <a href="#" class="tags__link tags__link--dots">Accesories</a>
                     </li>
                     <li>
-                        <a href="#" class="tags__link tags__link--dots tags__link--fashion">Fashion</a>
+                        <a href="#" class="tags__link tags__link--dots">Fashion</a>
                     </li>
                     <li>
-                        <a href="#" class="tags__link tags__link--dots tags__link--clothing">Clothings</a>
+                        <a href="#" class="tags__link tags__link--dots">Clothings</a>
                     </li>
                     <li>
-                        <a href="#" class="tags__link tags__link--dots tags__link--b&w">Bags and Wallets</a>
+                        <a href="#" class="tags__link tags__link--dots">Bags and Wallets</a>
                     </li>
                     <li>
-                        <a href="#" class="tags__link tags__link--dots tags__link--fragrances">Fragrances</a>
+                        <a href="#" class="tags__link tags__link--dots">Fragrances</a>
                     </li>
                     <li>
-                        <a href="#" class="tags__link tags__link--c&h">Caps & Hats</a>
+                        <a href="#" class="tags__link">Caps & Hats</a>
                     </li>
                 </ul>
             </div>
             <div class="tags__gallery">
-                <div class="tags__gallery--wrapper tags__decoration">
-                    <img class="tags__gallery--image" src="image//TagsGallery/tags__gallery1.jpg">
-                    <div class="tags__gallery--caption">
-                        <h3 class="tags__gallery--title">CLOTHES</h3>
-                        <button class="btn btn__tags--gallery">Click here</button>
+                <div class="tags__wrapper decoration decoration--tags">
+                    <img class="tags__img" src="image//TagsGallery/tags__gallery1.jpg">
+                    <div class="tags__caption">
+                        <h3 class="tags__caption--title">CLOTHES</h3>
+                        <button class="btn btn__tags">Click here</button>
                     </div>
                 </div>
-                <div class="tags__gallery--wrapper">
-                    <img class="tags__gallery--image tags__gallery--image-center"
-                        src="image//TagsGallery/tags__gallery2.jpg">
-                    <div class="tags__gallery--caption">
-                        <h3 class="tags__gallery--title">FOOTWEAR</h3>
-                        <button class="btn btn__tags--gallery">Click here</button>
+                <div class="tags__wrapper">
+                    <img class="tags__img tags__img--center" src="image//TagsGallery/tags__gallery2.jpg">
+                    <div class="tags__caption">
+                        <h3 class="tags__caption--title">FOOTWEAR</h3>
+                        <button class="btn btn__tags">Click here</button>
                     </div>
                 </div>
-                <div class="tags__gallery--wrapper">
-                    <img class="tags__gallery--image" src="image//TagsGallery/tags__gallery3.jpg">
-                    <div class="tags__gallery--caption tags__gallery--caption-fix">
-                        <h3 class="tags__gallery--title">HAND BAGS</h3>
-                        <button class="btn btn__tags--gallery">Click here</button>
+                <div class="tags__wrapper">
+                    <img class="tags__img" src="image//TagsGallery/tags__gallery3.jpg">
+                    <div class="tags__caption">
+                        <h3 class="tags__caption--title">HAND BAGS</h3>
+                        <button class="btn btn__tags">Click here</button>
                     </div>
                 </div>
             </div>
@@ -200,72 +202,230 @@
     </section>
     <section class="menWomen">
         <div class="container">
-            <div class="menWomen__men--row">
-                <h2 class="menWomen__title menWomen__title--men">MEN</h2>
-                <button class="btn__menWomen btn__menWomen--men btn__menWomen--left"><i
-                        class="fas fa-angle-left"></i></button>
-                <button class="btn__menWomen btn__menWomen--men btn__menWomen--right"><i
-                        class="fas fa-angle-right"></i></button>
+
+            <div class="men">
+                <h2 class="men__title">MEN</h2>
+                <div class="menWomen__button menWomen__button--men">
+                    <button class="btn__carusel btn__small-carusel btn__small-carusel--left">
+                        <i class="fas fa-angle-left"></i>
+                    </button>
+                    <button class="btn__carusel btn__small-carusel btn__small-carusel--right">
+                        <i class="fas fa-angle-right"></i>
+                    </button>
+                </div>
             </div>
-            <div class="menWomen__men">
+
+            <div class="menWomen__gallery decoration decoration--men">
+
                 <div class="menWomen__wrapper">
                     <img src="/image//Men&women//men1.jpg">
                     <div class="menWomen__caption">
-                        <h3 class="menWomen__caption--title">FOR MEN</h3>
-                        <button class="btn btn__menWomen--for">More</button>
+                        <h3 class="menWomen__title">FOR MEN</h3>
+                        <button class="btn btn__menWomen">More</button>
                     </div>
                 </div>
-                <div class="menWomen__wrapper menWomen__decoration--men">
-                    <div class=" menWomen__card">
-                        <img class="menWomen__card--img" src="/image/Men&women/men2.jpg">
-                        <h4 class="menWomen__card--caption">Printed Chiffon Dress</h4>
-                        <p class="menWomen__card--price"> £ 61.19</p>
-                        <p class="menWomen__card--opinion"><i class="far fa-star"></i><i class="far fa-star"></i><i
-                                class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
-                        <button class="btn btn__menWomen--card">Add to cart</button>
+
+                <div class="menWomen__wrapper">
+
+                    <div class="card">
+                        <img class="card__img" src="/image/Men&women/men2.jpg">
+                        <h4 class="card__caption">Printed Chiffon Dress</h4>
+                        <p class="card__price"> £ 61.19</p>
+                        <p class="card__opinion">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </p>
+                        <button class="btn btn__card">Add to cart</button>
                     </div>
-                    <div class="menWomen__card">
-                        <img class="menWomen__card--img" src="/image/Men&women/men3.jpg">
-                        <h4 class="menWomen__card--caption">Printed Chiffon Dress</h4>
-                        <p class="menWomen__card--price"> £ 61.19</p>
-                        <p class="menWomen__card--opinion"><i class="far fa-star"></i><i class="far fa-star"></i><i
-                                class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
-                        <button class="btn btn__menWomen--card">Add to cart</button>
+
+                    <div class="card">
+                        <img class="card__img" src="/image/Men&women/men3.jpg">
+                        <h4 class="card__caption">Printed Chiffon Dress</h4>
+                        <p class="card__price"> £ 61.19</p>
+                        <p class="card__opinion">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </p>
+                        <button class="btn btn__card">Add to cart</button>
                     </div>
+
                 </div>
             </div>
-            <div class="menWomen__women--row">
-                <h2 class="menWomen__title menWomen__title--women">WOMEN</h2>
-                <button class="btn__menWomen btn__menWomen--women btn__menWomen--left"><i
-                        class="fas fa-angle-left"></i></button>
-                <button class="btn__menWomen btn__menWomen--women btn__menWomen--right"><i
-                        class="fas fa-angle-right"></i></button>
-            </div>
-            <div class="menWomen__women">
-                <div class="menWomen__wrapper menWomen__decoration--women">
-                    <div class="menWomen__card">
-                        <img class="menWomen__card--img" src="/image//Men&women/women1.jpg">
-                        <h4 class="menWomen__card--caption">Printed Chiffon Dress</h4>
-                        <p class="menWomen__card--price"> £ 61.19</p>
-                        <p class="menWomen__card--opinion"><i class="far fa-star"></i><i class="far fa-star"></i><i
-                                class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
-                        <button class="btn btn__menWomen--card">Add to cart</button>
-                    </div>
-                    <div class="menWomen__card">
-                        <img class="menWomen__card--img" src="/image//Men&women//women2.jpg">
-                        <h4 class="menWomen__card--caption">Printed Chiffon Dress</h4>
-                        <p class="menWomen__card--price"> £ 61.19</p>
-                        <p class="menWomen__card--opinion"><i class="far fa-star"></i><i class="far fa-star"></i><i
-                                class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
-                        <button class="btn btn__menWomen--card">Add to cart</button>
-                    </div>
+
+            <div class="women">
+                <h2 class="women__title">WOMEN</h2>
+                <div class="menWomen__button menWomen__button--women">
+                    <button class="btn__carusel btn__small-carusel btn__small-carusel--left">
+                        <i class="fas fa-angle-left"></i>
+                    </button>
+                    <button class="btn__carusel btn__small-carusel btn__small-carusel--right">
+                        <i class="fas fa-angle-right"></i>
+                    </button>
                 </div>
+            </div>
+
+            <div class="menWomen__gallery decoration decoration--women">
+
+                <div class="menWomen__wrapper">
+
+                    <div class="card">
+                        <img class="card__img" src="/image//Men&women/women1.jpg">
+                        <h4 class="card__caption">Printed Chiffon Dress</h4>
+                        <p class="card__price"> £ 61.19</p>
+                        <p class="card__opinion">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </p>
+                        <button class="btn btn__card">Add to cart</button>
+                    </div>
+
+                    <div class="card">
+                        <img class="card__img" src="/image//Men&women//women2.jpg">
+                        <h4 class="card__caption">Printed Chiffon Dress</h4>
+                        <p class="card__price"> £ 61.19</p>
+                        <p class="card__opinion">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </p>
+                        <button class="btn btn__card">Add to cart</button>
+                    </div>
+
+                </div>
+
                 <div class="menWomen__wrapper">
                     <img src="/image//Men&women/women3.jpg">
                     <div class="menWomen__caption">
-                        <h3 class="menWomen__caption--title">FOR WOMEN</h3>
-                        <button class="btn btn__menWomen--for">Click here</button>
+                        <h3 class="menWomen__title">FOR WOMEN</h3>
+                        <button class="btn btn__menWomen">Click here</button>
                     </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="container">
+            <div class="cards__header">
+                <div class="cards__title">
+                    <a class="cards__element cards__element--active" href="#">
+                        <h3>NEW ARRIVALS</h3>
+                    </a>
+                    <a class="cards__element" href="#">
+                        <h3>BEST SELLERS</h3>
+                    </a>
+                    <a class="cards__element" href="#">
+                        <h3>POPULAR</h3>
+                    </a>
+                </div>
+                <div class="cards__button">
+                    <button class="btn__carusel btn__small-carusel btn__small-carusel--left">
+                        <i class="fas fa-angle-left"></i>
+                    </button>
+                    <button class="btn__carusel btn__small-carusel btn__small-carusel--right">
+                        <i class="fas fa-angle-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="cards__wrapper decoration decoration--cards">
+                <div class="card">
+                    <img class="card__img" src="/image/Cards/cards1.jpg">
+                    <h4 class="card__caption">Printed Chiffon Dress</h4>
+                    <p class="card__price"> £ 61.19</p>
+                    <p class="card__opinion">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </p>
+                    <button class="btn btn__card btn__card--fix">Add to cart</button>
+                </div>
+
+                <div class="card">
+                    <img class="card__img" src="/image/Cards/cards2.jpg">
+                    <h4 class="card__caption">Printed Chiffon Dress</h4>
+                    <p class="card__price"> £ 61.19</p>
+                    <p class="card__opinion">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </p>
+                    <button class="btn btn__card btn__card--fix">Add to cart</button>
+                </div>
+
+                <div class="card">
+                    <img class="card__img" src="/image/Cards/cards3.jpg">
+                    <h4 class="card__caption">Printed Chiffon Dress</h4>
+                    <p class="card__price"> £ 61.19</p>
+                    <p class="card__opinion">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </p>
+                    <button class="btn btn__card btn__card--fix">Add to cart</button>
+                </div>
+
+                <div class="card">
+                    <img class="card__img" src="/image/Cards/cards4.jpg">
+                    <h4 class="card__caption">Printed Chiffon Dress</h4>
+                    <p class="card__price"> £ 61.19</p>
+                    <p class="card__opinion">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </p>
+                    <button class="btn btn__card btn__card--fix">Add to cart</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="blog decoration decoration--blog">
+        <div class="container">
+            <div class="blog__header">
+                <h3 class="blog__title">FROM THE BLOG</h3>
+            </div>
+            <div class="article">
+                <div class="article__wrapper">
+                    <img src="/image//Blog/blog1.jpg">
+                    <h4 class="article__title">CURABITUR LIGULASAPIEN</h4>
+                    <p class="article__paragraph">Vestibulum sagittis, nisl nec pellentesque suscipit, arcu nisi maximus
+                        neque, vitae finibus erat
+                        odio eu lacus. Curabitur malesuada erat eros, quis dignissim dui </p>
+                </div>
+                <div class="article__wrapper">
+                    <img src="/image//Blog/blog2.jpg">
+                    <h4 class="article__title">CURABITUR LIGULASAPIEN</h4>
+                    <p class="article__paragraph">Vestibulum sagittis, nisl nec pellentesque suscipit, arcu nisi maximus
+                        neque, vitae finibus erat
+                        odio eu lacus. Curabitur malesuada erat eros, quis dignissim dui </p>
+                </div>
+                <div class="article__wrapper">
+                    <img src="/image//Blog/blog3.jpg">
+                    <h4 class="article__title">CURABITUR LIGULASAPIEN</h4>
+                    <p class="article__paragraph">Vestibulum sagittis, nisl nec pellentesque suscipit, arcu nisi maximus
+                        neque, vitae finibus erat
+                        odio eu lacus. Curabitur malesuada erat eros, quis dignissim dui </p>
                 </div>
             </div>
         </div>
