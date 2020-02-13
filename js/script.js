@@ -1,7 +1,7 @@
 let i = 0;
 
 function hamburgerButton() {
-    const hamburgerBtn = document.querySelector('.menu__wrapper--hamburger');
+    const hamburgerBtn = document.querySelector('.hamburger__wrapper');
     const hamburgerToggle = document.querySelector('.menu__element')
 
     hamburgerBtn.addEventListener('click', () => {
