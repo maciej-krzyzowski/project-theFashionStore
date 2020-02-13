@@ -120,6 +120,59 @@ body {
 	}
 }
 
+.btn__submit {
+	position: absolute;
+    right: -6px;
+    font-size: 16px;
+	padding: 21px 31px;
+	top: 10px;
+}
+
+
+// DECORATION 
+
+.decoration {
+	position: relative;
+	
+	&::before {
+		content: "";
+		position: absolute;
+		background-color: $color-gray;
+	}
+	
+	&--tags::before {
+		height: 281px;
+		width: 700px;
+		left: -725px;
+	}
+	
+	&--men::before {
+		height: 535px;
+		width: 700px;
+		top: -93px;
+    	right: -714px;
+	}
+	
+	&--women::before {
+		height: 543px;
+		width: 700px;
+		top: -98px;
+		left: -733px;
+	}
+	
+	&--cards::before {
+		height: 538px;
+		width: 700px;
+		top: -93px;
+    	right: -745px;
+	}
+
+	&--blog::before {
+		height: 600px;
+		width: 700px;
+		left: -369px;
+	}
+}
 
 // HEAD
 
@@ -162,9 +215,9 @@ body {
     background-color: #fff;
 	transform: translate(-29px, 10px);
 }
-	
+
 .navbar__img {
-    margin: 26px 0 0 27px;
+	margin: 26px 0 0 27px;
 }
 
 .navbar__form {
@@ -178,7 +231,7 @@ body {
 	display: inline-block;
 	width: 310px;
 	height: 52px;
-
+	
 	&--imput {
 		padding-left: 13px;
 		width: 96%;
@@ -192,18 +245,18 @@ body {
 .navbar__toggle {
 	display: inline-block;
 	text-align: center;
-
+	
 	&--categories {
 		width: 220px;
 		height: 52px;
 		padding: 14px 31px 16px 44px;
 		text-decoration: none;
 		color: $color-darkGray;
-
+		
 		& > i {
-			margin-left: 43px;
+			margin-left: 40px;
 		}
-
+		
 		&::before {
 			content: '';
 			display: inline-block;
@@ -298,10 +351,10 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
+	
 	&--home {
 		padding: 0 21px;
-
+		
 		&::before {
 			position: absolute;
 			bottom: -2px;
@@ -314,23 +367,23 @@ body {
 	&--shop {
 		padding: 0 26px;
 	}
-
+	
 	&--fetures {
 		padding: 0 27px;
 	}
-
+	
 	&--megaGroup {
 		padding: 0 31px;
 	}
-
+	
 	&--about {
 		padding: 0 38px;
 	}
-
+	
 	&--blog {
 		padding: 0 20px;
 	}
-
+	
 	&--contact {
 		padding: 0 28px;
 	}
@@ -374,7 +427,7 @@ body {
 .carusel__item {
 	position: absolute;
 	display: none;
-
+	
 	&--active {
 		display: block;
 		animation: carusel 4s;
@@ -392,7 +445,7 @@ body {
 .carusel__caption {
 	position: absolute;
 	text-align: center;
-	top: 136px;
+	top: 138px;
 	right: 0;
 	left: 0;
 }
@@ -404,7 +457,7 @@ body {
 		letter-spacing: -1px;
 		font-size: 86px;
 	}
-
+	
 	&--h2 {
 		font-size: 43px;
 		margin: 0;
@@ -535,26 +588,12 @@ body {
 	}
 }
 
-.decoration--tags {
-	position: relative;
-
-	&::before {
-		content: "";
-		position: absolute;
-		display: inline-block;
-		height: 281px;
-		min-width: 700px;
-		background-color: $color-gray;
-		left: -725px;
-	}
-}
-
 // menWomen 
 
 .menWomen {
 	position: relative;
 	top: -21px;
-
+	
 	&__gallery {
 		display: flex;
 	}
@@ -580,51 +619,7 @@ body {
 	}
 }
 
-.decoration {
-	position: relative;
-
-	&--men::after {
-		content: "";
-		position: absolute;
-		height: 535px;
-		min-width: 700px;
-		background-color: $color-gray;
-		top: -93px;
-    	right: -714px;
-	}
-
-	&--women::before {
-		content: "";
-		position: absolute;
-		height: 543px;
-		min-width: 700px;
-		background-color: $color-gray;
-		top: -98px;
-		left: -733px;
-	}
-
-	&--cards::after {
-		content: "";
-		position: absolute;
-		height: 538px;
-		min-width: 700px;
-		background-color: $color-gray;
-		top: -93px;
-    	right: -745px;
-	}
-
-	&--blog::before {
-		content: "";
-		position: absolute;
-		height: 600px;
-		min-width: 700px;
-		background-color: #ebebeb;
-		top: 0px;
-		left: -369px;
-	}
-}
-
-.men{
+.men {
 	position: relative;
 	height: 183px;
 }
@@ -656,12 +651,13 @@ body {
 }
 
 .women__title {
-    margin: 20px 0;
+	margin: 20px 0;
     position: relative;
     display: block;
     font-size: 26px;
     left: 11px;
-    top: 77px;
+	top: 77px;
+	letter-spacing: 2px;
 	
 	&::after {
 		content: "";
@@ -705,7 +701,7 @@ body {
 .card__caption {
 	transform: translate(-2px, -1px);
 	margin-bottom: 24px;
-
+	
 	&::after {
 		content: "";
 		position: relative;
@@ -731,7 +727,7 @@ body {
 	& > .far {
 		margin-right: 3px;
 	}
-
+	
 	& > .fas {
 		margin-right: 3px;
 		color: $color-yellow;
@@ -756,17 +752,17 @@ body {
 	letter-spacing: 3px;
 	margin: 10px 8px 0 14px;
 	font-weight: 100;
-
+	
 		&--active {
 			color: $color-darkGray;
 		}
-	
-	&::after {
-		position: relative;
-		content: "";
-		display: block;
-		width: 311px;
-		background-color: $color-darkGray2;
+		
+		&::after {
+			position: relative;
+			content: "";
+			display: block;
+			width: 311px;
+			background-color: $color-darkGray2;
 		height: 3px;
 		top: -6px;
 		left: -1px;
@@ -833,10 +829,116 @@ body {
 	line-height: 1.5;
 }
 
+// FOOTER 
+
+.footer {
+	margin-top: 66px;
+}
+
+.footer__wrapper {
+	display: flex;
+	height: 417px;
+}
+
+.about-us {
+	margin-left: 36px;
+	flex: 1;
+}
+
+.about-us__paragraph {
+	margin-top: 19px;
+	max-width: 270px;
+    letter-spacing: 0.8px;
+    line-height: 1.5;
+}
+
+.footer__column {
+	flex: 3;
+	position: relative;
+}
+
+.newsletter {
+	font-size: 21px;
+    margin: 7px 34px;
+    letter-spacing: 2px;
+}
+
+.newsletter__input {
+	margin-left: 44px;
+	outline: none;
+	border: none;
+	background-color: $color-gray;
+	width: 326px;
+	height: 58px;
+	padding-left: 15px;
+	font-size: 20px;
+	transform: translateY(3px);
+}
+
+.lists__wrapper {
+	margin-top: 57px;
+	display: flex;
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 851px;
+		background-color: #818181;
+		height: 1px;
+		top: 111px;
+		left: 28px;
+	}
+}
+
+.list {
+	flex: 1;
+    font-size: 19px;
+}
+
+.list__header {
+	margin: 27px 34px 34px;
+    letter-spacing: 1px;
+}
+
+.list__modifier {
+	padding-left: 32px;
+}
+
+.list__element {
+	list-style-type: none;
+	margin: 16px 0;
+	font-size: 16px;
+
+	a {
+		text-decoration: none;
+		color: $color-darkGray;
+
+		i {
+			margin-right: 10px;
+		}
+	}
+}
+
+.footer__signature {
+	margin: 70px 0;
+	text-align: center;
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 1190px;
+		background-color: #818181;
+		height: 1px;
+		top: -71px;
+		left: 18px;
+	}
+}
+
 @media (min-width: 768px) and (max-width: 1250px) {
 	
 	.display--none {
-        display: none;
+		display: none;
 	}
 	
 	.navbar__row {

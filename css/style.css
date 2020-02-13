@@ -107,6 +107,57 @@ body {
   padding-left: 12px;
 }
 
+.btn__submit {
+  position: absolute;
+  right: -6px;
+  font-size: 16px;
+  padding: 21px 31px;
+  top: 10px;
+}
+
+.decoration {
+  position: relative;
+}
+
+.decoration::before {
+  content: "";
+  position: absolute;
+  background-color: #ebebeb;
+}
+
+.decoration--tags::before {
+  height: 281px;
+  width: 700px;
+  left: -725px;
+}
+
+.decoration--men::before {
+  height: 535px;
+  width: 700px;
+  top: -93px;
+  right: -714px;
+}
+
+.decoration--women::before {
+  height: 543px;
+  width: 700px;
+  top: -98px;
+  left: -733px;
+}
+
+.decoration--cards::before {
+  height: 538px;
+  width: 700px;
+  top: -93px;
+  right: -745px;
+}
+
+.decoration--blog::before {
+  height: 600px;
+  width: 700px;
+  left: -369px;
+}
+
 .head {
   height: 45px;
   border-bottom: 1px solid #e1e1e1;
@@ -185,7 +236,7 @@ body {
 }
 
 .navbar__toggle--categories > i {
-  margin-left: 43px;
+  margin-left: 40px;
 }
 
 .navbar__toggle--categories::before {
@@ -385,7 +436,7 @@ body {
 .carusel__caption {
   position: absolute;
   text-align: center;
-  top: 136px;
+  top: 138px;
   right: 0;
   left: 0;
 }
@@ -522,20 +573,6 @@ body {
   letter-spacing: 3px;
 }
 
-.decoration--tags {
-  position: relative;
-}
-
-.decoration--tags::before {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  height: 281px;
-  min-width: 700px;
-  background-color: #ebebeb;
-  left: -725px;
-}
-
 .menWomen {
   position: relative;
   top: -21px;
@@ -565,50 +602,6 @@ body {
 
 .menWomen__button--women {
   top: 15px;
-}
-
-.decoration {
-  position: relative;
-}
-
-.decoration--men::after {
-  content: "";
-  position: absolute;
-  height: 535px;
-  min-width: 700px;
-  background-color: #ebebeb;
-  top: -93px;
-  right: -714px;
-}
-
-.decoration--women::before {
-  content: "";
-  position: absolute;
-  height: 543px;
-  min-width: 700px;
-  background-color: #ebebeb;
-  top: -98px;
-  left: -733px;
-}
-
-.decoration--cards::after {
-  content: "";
-  position: absolute;
-  height: 538px;
-  min-width: 700px;
-  background-color: #ebebeb;
-  top: -93px;
-  right: -745px;
-}
-
-.decoration--blog::before {
-  content: "";
-  position: absolute;
-  height: 600px;
-  min-width: 700px;
-  background-color: #ebebeb;
-  top: 0px;
-  left: -369px;
 }
 
 .men {
@@ -648,6 +641,7 @@ body {
   font-size: 26px;
   left: 11px;
   top: 77px;
+  letter-spacing: 2px;
 }
 
 .women__title::after {
@@ -811,6 +805,110 @@ body {
 .article__paragraph {
   margin-left: 9px;
   line-height: 1.5;
+}
+
+.footer {
+  margin-top: 66px;
+}
+
+.footer__wrapper {
+  display: flex;
+  height: 417px;
+}
+
+.about-us {
+  margin-left: 36px;
+  flex: 1;
+}
+
+.about-us__paragraph {
+  margin-top: 19px;
+  max-width: 270px;
+  letter-spacing: 0.8px;
+  line-height: 1.5;
+}
+
+.footer__column {
+  flex: 3;
+  position: relative;
+}
+
+.newsletter {
+  font-size: 21px;
+  margin: 7px 34px;
+  letter-spacing: 2px;
+}
+
+.newsletter__input {
+  margin-left: 44px;
+  outline: none;
+  border: none;
+  background-color: #ebebeb;
+  width: 326px;
+  height: 58px;
+  padding-left: 15px;
+  font-size: 20px;
+  transform: translateY(3px);
+}
+
+.lists__wrapper {
+  margin-top: 57px;
+  display: flex;
+}
+
+.lists__wrapper::before {
+  content: "";
+  position: absolute;
+  width: 851px;
+  background-color: #818181;
+  height: 1px;
+  top: 111px;
+  left: 28px;
+}
+
+.list {
+  flex: 1;
+  font-size: 19px;
+}
+
+.list__header {
+  margin: 27px 34px 34px;
+  letter-spacing: 1px;
+}
+
+.list__modifier {
+  padding-left: 32px;
+}
+
+.list__element {
+  list-style-type: none;
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+.list__element a {
+  text-decoration: none;
+  color: #3a3a3a;
+}
+
+.list__element a i {
+  margin-right: 10px;
+}
+
+.footer__signature {
+  margin: 70px 0;
+  text-align: center;
+  position: relative;
+}
+
+.footer__signature::before {
+  content: "";
+  position: absolute;
+  width: 1190px;
+  background-color: #818181;
+  height: 1px;
+  top: -71px;
+  left: 18px;
 }
 
 @media (min-width: 768px) and (max-width: 1250px) {
