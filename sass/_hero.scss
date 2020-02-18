@@ -508,11 +508,14 @@
 
 	.carusel {
 		z-index: 0;
-		height: 75vh;
 	}
 
 	.carusel__img {
-		height: 75vh;
+		height: 100vh;
+	}
+
+	.carusel__caption {
+		top: 70px;
 	}
 
 	.carusel__text {
@@ -529,6 +532,21 @@
 
 		&--for {
 			font-size: 30px;
+		}
+	}
+
+}
+
+@media (min-width: 320px) and (max-width: 400px) {
+	.carusel__caption {
+		top: 60px;
+	}
+
+	.carusel__text--for {
+		font-size: 26px;
+
+		&::before, &::after {
+			width: 80px;
 		}
 	}
 }

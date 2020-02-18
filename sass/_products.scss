@@ -16,11 +16,35 @@
 	}
 }
 
+.products__gallery {
+	display: flex;
+	margin-bottom: 11px;
+}
+
 .products__wrapper {
-	display: inline-block;
 	position: relative;
+	display: inline-block;
 	width: 50%;
 }
+
+.small-carusel__men {
+	display: none;
+	width: 100%;
+
+	&--active {
+		display: inline-block;
+	}
+}
+
+.small-carusel__women {
+	display: none;
+	width: 100%;
+
+	&--active {
+		display: inline-block;
+	}
+}
+
 
 .products__buttons {
 	position: relative;
@@ -104,6 +128,26 @@
 		display: none;
 	}
 
+	.small-carusel__men {
+		display: none;
+	
+		&--active {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+		}
+	}
+
+	.small-carusel__women {
+		display: none;
+	
+		&--active {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+		}
+	}
+
 	.products__wrapper {
 		display: block;
 		width: 100%;
@@ -116,6 +160,12 @@
 		&--women {
 			flex-direction: column-reverse;
 		}
+	}
+
+	.small-carusel {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
 	}
 
 	.products__img {
