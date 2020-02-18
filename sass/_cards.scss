@@ -1,0 +1,199 @@
+.cards__header {
+	margin-top: 67px;
+	vertical-align: top;
+}
+
+.cards__title {
+	display: inline-block;
+}
+
+.cards__element {
+	display: inline-block;
+	text-decoration: none;
+	color: $color-darkGray2;
+	font-size: 22px;
+	letter-spacing: 3px;
+	margin: 10px 8px 0 14px;
+	font-weight: 100;
+	
+	&--active {
+		color: $color-darkGray;
+	}
+	
+	&::after {
+		position: relative;
+		content: "";
+		display: block;
+		width: 311px;
+		background-color: $color-darkGray2;
+		height: 3px;
+		top: -5px;
+		left: -1px;
+	}
+}
+
+.cards__button {
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	margin: 40px 0 0 180px;
+}
+
+.cards__wrapper {
+	display: flex;
+	margin: 37px 12px;
+}
+
+.card {
+	display: inline-block;
+    width: 25%;
+    position: relative;
+    vertical-align: top;
+	margin: 3px 5px;
+	
+	&__product {
+		width: 23%;
+		margin: 2px 10px;
+	}
+}
+
+.card__caption {
+	margin: 19px 0 28px 0px;
+	
+	&::after {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 273px;
+		background-color: #818181;
+		height: 2px;
+		bottom: 58px;
+		left: 0px;
+	}
+}
+
+.card__price {
+	margin: 0;
+	font-size: 21px;
+}
+
+.card__opinion {
+	margin: 4px 0px 0px 2px;
+	font-size: 13px;
+	
+	& > .far {
+		margin-right: 3px;
+	}
+	
+	& > .fas {
+		margin-right: 3px;
+		color: $color-yellow;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1250px) {
+
+	.cards__element {
+		display: none;
+
+		&::after {
+			width: 372px;
+		}
+
+		&--active {
+			display: block;
+		}
+	}
+
+	.cards__button {
+		position: absolute;
+		right: 70px;
+	}
+
+	.card {
+		width: 25%;
+		margin: 0 5px;
+	}
+
+	.card__product {
+		width: 24%;
+		margin: 0 1px;
+	}
+
+	.card__img {
+		width: 95%;
+	}
+
+	.card__caption {
+		margin: 3px 0;
+
+		&::after {
+			bottom: 42px;
+			width: 95%;
+			height: 1px;
+		}
+	}
+
+	.card__opinion {
+		font-size: 10px;
+		.fas {
+			margin: 0;
+		}
+	}
+
+	.cards__header {
+		width: 100%;
+	}
+
+	.cards__wrapper {
+		margin: 37px 0;
+		width: 100%;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+	.card {
+		margin: 30px auto 20px auto;
+		width: auto;
+	}
+
+	.card__product {
+		margin: 30px auto 20px auto;
+		width: auto;
+	}
+
+	.cards__wrapper {
+		flex-direction: column;
+	}
+
+	.cards__element {
+		display: none;
+
+		&::after {
+			width: 100%;
+		}
+
+		&--active {
+			display: block;
+		}
+	}
+
+	.cards__button {
+		display: none;
+	}
+
+	.cards__header {
+		margin-top: 65px;
+	}
+
+	.cards__title {
+		width: 90%;
+		display: block;
+    	margin: 65px auto 35px;
+	}
+
+	.cards__wrapper {
+		margin-top: 0;
+	}
+}

@@ -1,0 +1,95 @@
+.btn {
+  color: #fff;
+  background-color: #db3838;
+  border: #db3838;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn__search {
+  display: inline-block;
+  position: relative;
+  width: 71px;
+  height: 55px;
+  font-size: 20px;
+  border: 1px solid black;
+  left: -5px;
+  top: 1px;
+}
+
+.btn__tags {
+  position: relative;
+  padding: 10px 35px;
+  font-size: 15px;
+  margin-top: 9px;
+}
+
+.btn__menWomen {
+  font-size: 15px;
+  padding: 23px 91px;
+}
+
+.btn__card {
+  position: absolute;
+  font-size: 16px;
+  bottom: -11px;
+  right: -1px;
+  padding: 10px 18px 9px 20px;
+}
+
+.btn__carusel {
+  position: absolute;
+  outline: none;
+  color: #fff;
+  font-size: 47px;
+  background: none;
+  border: #fff 5px solid;
+  border-radius: 50%;
+  width: 66px;
+  height: 66px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.btn__carusel--left {
+  top: 240px;
+  left: 31px;
+  padding-right: 12px;
+}
+
+.btn__carusel--right {
+  top: 240px;
+  right: 31px;
+  padding-left: 12px;
+}
+
+.btn__small-carusel {
+  color: #818181;
+  border: #818181 solid 2px;
+  height: 39px;
+  width: 39px;
+  font-size: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn__small-carusel--left {
+  right: 59px;
+  padding-right: 12px;
+}
+
+.btn__small-carusel--right {
+  right: 8px;
+  padding-left: 12px;
+}
+
+.btn__submit {
+  position: absolute;
+  right: -6px;
+  font-size: 16px;
+  padding: 21px 31px;
+  top: 10px;
+}
+
+/*# sourceMappingURL=button.css.map */

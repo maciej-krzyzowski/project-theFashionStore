@@ -1,15 +1,21 @@
 let i = 0;
 
-function hamburgerButton() {
+function button() {
     const hamburgerBtn = document.querySelector('.hamburger__wrapper');
-    const hamburgerToggle = document.querySelector('.menu__element')
+    const menuWrapper = document.querySelector('.menu__wrapper')
+    const searchBtn = document.querySelector('.btn__search')
+    const searchWrapper = document.querySelector('.navbar__form')
 
     hamburgerBtn.addEventListener('click', () => {
-        hamburgerToggle.classList.toggle('menu__element--active');
+        menuWrapper.classList.toggle('menu__wrapper--active');
     });
+
+    searchBtn.addEventListener('click', () => {
+        searchWrapper.classList.toggle('navbar__form--active')
+    })
 }
 
-hamburgerButton();
+button();
 
 function toggleClass() {
     const caruselElements = document.querySelectorAll('.carusel__item');
@@ -29,10 +35,10 @@ function carusel() {
     }
 }
 
-setInterval(function () {
-    console.log('dupa');
-    carusel();;
-}, 4000);
+// setInterval(function () {
+//     console.log('dupa');
+//     carusel();;
+// }, 4000);
 
 function caruselButton() {
     const btnLeft = document.querySelector('.btn__carusel--left');

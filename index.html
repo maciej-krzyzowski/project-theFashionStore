@@ -38,25 +38,25 @@
                     <div class="form__wrapper">
                         <div class="navbar__form">
                             <div class="navbar__search">
-                                <input class="navbar__search--imput" type="text" id="search" placeholder="Search">
+                                <input class="navbar__search--input" type="text" id="search" placeholder="Search">
                             </div>
-                            <div class="navbar__toggle display--none">
+                            <div class="navbar__toggle">
                                 <a href="#" class="navbar__toggle--categories">All Categories <i
                                         class="fas fa-caret-down"></i></a>
                                 <ul class="navbar__list">
-                                    <li>
+                                    <li class="navbar__element">
                                         <a href="#">Hoodies & Sweatshirts</a>
                                     </li>
-                                    <li>
+                                    <li class="navbar__element">
                                         <a href="#">Jeans</a>
                                     </li>
-                                    <li>
+                                    <li class="navbar__element">
                                         <a href="#">Coats & Jackets</a>
                                     </li>
-                                    <li>
+                                    <li class="navbar__element">
                                         <a href="#">Sports</a>
                                     </li>
-                                    <li>
+                                    <li class="navbar__element">
                                         <a href="#">Swimwear</a>
                                     </li>
                                 </ul>
@@ -66,7 +66,7 @@
                             <i class="fas fa-search"></i>
                         </button>
                     </div>
-                    <div class="navbar__social-media display--none">
+                    <div class="navbar__social-media">
                         <a href="#" class="navbar__social-media--icon"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="navbar__social-media--icon"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="navbar__social-media--icon"><i class="fab fa-instagram"></i></a>
@@ -80,35 +80,36 @@
                 <div class="hamburger__wrapper">
                     <div class="hamburger"></div>
                 </div>
-                <div class="menu__element">
-                    <ul>
-                        <li>
+                <div class="menu__wrapper">
+                    <ul class="menu__list">
+                        <li class="menu__element">
                             <a class="menu__item menu__item--home" href="#">HOME</a>
                         </li>
-                        <li>
-                            <a class="menu__item menu__item--shop" href="#">SHOP</a>
+                        <li class="menu__element">
+                            <a class="menu__item" href="#">SHOP</a>
                         </li>
-                        <li>
-                            <a class="menu__item menu__item--fetures" href="#">FEATURES</a>
+                        <li class="menu__element">
+                            <a class="menu__item" href="#">FEATURES</a>
                         </li>
-                        <li>
-                            <a class="menu__item menu__item--megaGroup" href="#">MEGA GROUP</a>
+                        <li class="menu__element">
+                            <a class="menu__item" href="#">MEGA GROUP</a>
                         </li>
-                        <li>
-                            <a class="menu__item menu__item--about" href="#">ABOUT</a>
+                        <li class="menu__element">
+                            <a class="menu__item" href="#">ABOUT</a>
                         </li>
-                        <li>
-                            <a class="menu__item menu__item--blog" href="#">BLOG</a>
+                        <li class="menu__element">
+                            <a class="menu__item" href="#">BLOG</a>
                         </li>
-                        <li>
-                            <a class="menu__item menu__item--contact" href="#">CONTACT</a>
+                        <li class="menu__element">
+                            <a class="menu__item" href="#">CONTACT</a>
                         </li>
                     </ul>
                 </div>
                 <div class="menu__cart">
                     <a class="menu__item menu__item--cart" href="#">
                         <i class="fas fa-shopping-cart"></i>
-                        Shopping Cart(0)</a>
+                        <span>Shopping Cart(0)</span>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -146,36 +147,36 @@
     </hero>
     <section class="tags">
         <div class="container">
-            <div class="tags__text">
-                <ul>
-                    <li>
+            <div class="tags__links">
+                <ul class="tags__list">
+                    <li class="tags__element">
                         <p class="tags__link tags__link--p"><i
                                 class="far fa-arrow-alt-circle-right tags__link--icon"></i> Go
                             quickly
                             to</p>
                     </li>
-                    <li>
+                    <li class="tags__element">
                         <a href="#" class="tags__link tags__link--dots">Women</a>
                     </li>
-                    <li>
+                    <li class="tags__element">
                         <a href="#" class="tags__link tags__link--dots">Men</a>
                     </li>
-                    <li>
+                    <li class="tags__element">
                         <a href="#" class="tags__link tags__link--dots">Accesories</a>
                     </li>
-                    <li>
+                    <li class="tags__element">
                         <a href="#" class="tags__link tags__link--dots">Fashion</a>
                     </li>
-                    <li>
+                    <li class="tags__element">
                         <a href="#" class="tags__link tags__link--dots">Clothings</a>
                     </li>
-                    <li>
+                    <li class="tags__element">
                         <a href="#" class="tags__link tags__link--dots">Bags and Wallets</a>
                     </li>
-                    <li>
+                    <li class="tags__element">
                         <a href="#" class="tags__link tags__link--dots">Fragrances</a>
                     </li>
-                    <li>
+                    <li class="tags__element">
                         <a href="#" class="tags__link">Caps & Hats</a>
                     </li>
                 </ul>
@@ -205,12 +206,12 @@
             </div>
         </div>
     </section>
-    <section class="menWomen">
+    <section class="products">
         <div class="container">
 
-            <div class="men">
-                <h2 class="men__title">MEN</h2>
-                <div class="menWomen__button menWomen__button--men">
+            <div class="product__row">
+                <h2 class="product__title">MEN</h2>
+                <div class="products__buttons">
                     <button class="btn__carusel btn__small-carusel btn__small-carusel--left">
                         <i class="fas fa-angle-left"></i>
                     </button>
@@ -220,52 +221,49 @@
                 </div>
             </div>
 
-            <div class="menWomen__gallery decoration decoration--men">
+            <div class="products__gallery decoration decoration--men">
 
-                <div class="menWomen__wrapper">
-                    <img class="menWomen__img" src="/image//Men&women//men1.jpg">
-                    <div class="menWomen__caption">
-                        <h3 class="menWomen__title">FOR MEN</h3>
-                        <button class="btn btn__menWomen">More</button>
+                <div class="products__wrapper">
+                    <img class="products__img" src="/image//Products//men1.jpg">
+                    <div class="products__caption">
+                        <h3 class="products__title">FOR MEN</h3>
+                        <button class="btn btn__products">More</button>
                     </div>
                 </div>
 
-                <div class="menWomen__wrapper">
-
-                    <div class="card">
-                        <img class="card__img" src="/image/Men&women/men2.jpg">
-                        <h4 class="card__caption">Printed Chiffon Dress</h4>
-                        <p class="card__price"> £ 61.19</p>
-                        <p class="card__opinion">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </p>
-                        <button class="btn btn__card btn__card--mobile">Add to cart</button>
-                    </div>
-
-                    <div class="card">
-                        <img class="card__img" src="/image/Men&women/men3.jpg">
-                        <h4 class="card__caption">Printed Chiffon Dress</h4>
-                        <p class="card__price"> £ 61.19</p>
-                        <p class="card__opinion">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </p>
-                        <button class="btn btn__card btn__card--mobile">Add to cart</button>
-                    </div>
-
+                <div class="card card__product">
+                    <img class="card__img card__img--mobile" src="/image/Products/men2.jpg">
+                    <h4 class="card__caption card__caption--mobile">Printed Chiffon Dress</h4>
+                    <p class="card__price card__price--mobile"> £ 61.19</p>
+                    <p class="card__opinion card__opinion--mobile">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </p>
+                    <button class="btn btn__card btn__card--product">Add to cart</button>
                 </div>
+
+                <div class="card card__product">
+                    <img class="card__img card__img--mobile" src="/image/Products/men3.jpg">
+                    <h4 class="card__caption card__caption--mobile">Printed Chiffon Dress</h4>
+                    <p class="card__price card__price--mobile"> £ 61.19</p>
+                    <p class="card__opinion card__opinion--mobile">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </p>
+                    <button class="btn btn__card btn__card--product">Add to cart</button>
+                </div>
+
             </div>
 
-            <div class="women">
-                <h2 class="women__title">WOMEN</h2>
-                <div class="menWomen__button menWomen__button--women">
+            <div class="product__row">
+                <h2 class="product__title">WOMEN</h2>
+                <div class="products__buttons">
                     <button class="btn__carusel btn__small-carusel btn__small-carusel--left">
                         <i class="fas fa-angle-left"></i>
                     </button>
@@ -275,45 +273,41 @@
                 </div>
             </div>
 
-            <div class="menWomen__gallery decoration decoration--women">
+            <div class="products__gallery products__gallery--women decoration decoration--women">
 
-                <div class="menWomen__wrapper menWomen__wrapper--fix">
-
-                    <div class="card">
-                        <img class="card__img" src="/image//Men&women/women1.jpg">
-                        <h4 class="card__caption">Printed Chiffon Dress</h4>
-                        <p class="card__price"> £ 61.19</p>
-                        <p class="card__opinion">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </p>
-                        <button class="btn btn__card btn__card--mobile">Add to cart</button>
-                    </div>
-
-                    <div class="card">
-                        <img class="card__img" src="/image//Men&women//women2.jpg">
-                        <h4 class="card__caption">Printed Chiffon Dress</h4>
-                        <p class="card__price"> £ 61.19</p>
-                        <p class="card__opinion">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </p>
-                        <button class="btn btn__card btn__card--mobile">Add to cart</button>
-                    </div>
-
+                <div class="card card__product">
+                    <img class="card__img card__img--mobile" src="/image//Products/women1.jpg">
+                    <h4 class="card__caption card__caption--mobile">Printed Chiffon Dress</h4>
+                    <p class="card__price card__price--mobile"> £ 61.19</p>
+                    <p class="card__opinion card__opinion--mobile">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </p>
+                    <button class="btn btn__card btn__card--product">Add to cart</button>
                 </div>
 
-                <div class="menWomen__wrapper">
-                    <img class="menWomen__img menWomen__img--fix" src="/image//Men&women/women3.jpg">
-                    <div class="menWomen__caption">
-                        <h3 class="menWomen__title">FOR WOMEN</h3>
-                        <button class="btn btn__menWomen">Click here</button>
+                <div class="card card__product">
+                    <img class="card__img card__img--mobile" src="/image//Products//women2.jpg">
+                    <h4 class="card__caption card__caption--mobile">Printed Chiffon Dress</h4>
+                    <p class="card__price card__price--mobile"> £ 61.19</p>
+                    <p class="card__opinion card__opinion--product">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </p>
+                    <button class="btn btn__card btn__card--product">Add to cart</button>
+                </div>
+
+                <div class="products__wrapper">
+                    <img class="products__img products__img--fix" src="/image//Products/women3.jpg">
+                    <div class="products__caption">
+                        <h3 class="products__title">FOR WOMEN</h3>
+                        <button class="btn btn__products">Click here</button>
                     </div>
                 </div>
 
@@ -328,14 +322,14 @@
                     <a class="cards__element cards__element--active" href="#">
                         <h3>NEW ARRIVALS</h3>
                     </a>
-                    <a class="cards__element display--none" href=" #">
+                    <a class="cards__element" href=" #">
                         <h3>BEST SELLERS</h3>
                     </a>
-                    <a class="cards__element display--none" href="#">
+                    <a class="cards__element" href="#">
                         <h3>POPULAR</h3>
                     </a>
                 </div>
-                <div class="cards__button display--none">
+                <div class="cards__button">
                     <button class="btn__carusel btn__small-carusel btn__small-carusel--left">
                         <i class="fas fa-angle-left"></i>
                     </button>
@@ -345,7 +339,7 @@
                 </div>
             </div>
             <div class="cards__wrapper decoration decoration--cards">
-                <div class="card card--mobile">
+                <div class="card">
                     <img class="card__img" src="/image/Cards/cards1.jpg">
                     <h4 class="card__caption">Printed Chiffon Dress</h4>
                     <p class="card__price"> £ 61.19</p>
@@ -359,7 +353,7 @@
                     <button class="btn btn__card btn__card--fix">Add to cart</button>
                 </div>
 
-                <div class="card card--mobile">
+                <div class="card">
                     <img class="card__img" src="/image/Cards/cards2.jpg">
                     <h4 class="card__caption">Printed Chiffon Dress</h4>
                     <p class="card__price"> £ 61.19</p>
@@ -373,7 +367,7 @@
                     <button class="btn btn__card btn__card--fix">Add to cart</button>
                 </div>
 
-                <div class="card card--mobile">
+                <div class="card">
                     <img class="card__img" src="/image/Cards/cards3.jpg">
                     <h4 class="card__caption">Printed Chiffon Dress</h4>
                     <p class="card__price"> £ 61.19</p>
@@ -387,7 +381,7 @@
                     <button class="btn btn__card btn__card--fix">Add to cart</button>
                 </div>
 
-                <div class="card card--mobile display--none">
+                <div class="card">
                     <img class="card__img" src="/image/Cards/cards4.jpg">
                     <h4 class="card__caption">Printed Chiffon Dress</h4>
                     <p class="card__price"> £ 61.19</p>
@@ -443,20 +437,19 @@
         <div class="container">
             <div class="footer__wrapper">
                 <div class="about-us">
-                    <img src="/image/Logo.jpg">
+                    <img class="footer__img" src="/image/Logo.jpg">
                     <p class="about-us__paragraph">
                         Vestibulum sagittis, nisl nec pellen- tesque suscipit, arcu nisi maximus
                         neque, vitae finibus erat odio eu lacus. Curabitur malesuada erat eros, quis dignissim dui
                         accumsan
                         id. Cras non imperdiet metus. Sed nec turpis nec.</p>
                 </div>
-
                 <div class="footer__column">
                     <div class="newsletter">
                         <form>
                             <label class="newsletter__header" for="email">SIGN UP FOR OUR NEWSLETTER !</label>
                             <input class="newsletter__input" type="email" id="email" placeholder="E-mail">
-                            <input class="btn btn__submit" type="submit">
+                            <input class="btn btn__submit" type="submit" value="Submit">
                         </form>
                     </div>
                     <div class="lists__wrapper">
@@ -514,6 +507,7 @@
                 </div>
             </div>
             <div class="footer__signature">
+                <p>coded by Maciej Krzyzowski</p>
                 <p>© 2015 Psdfreebies. All Rights Reserved</p>
             </div>
         </div>
