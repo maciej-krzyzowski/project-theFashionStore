@@ -73,7 +73,7 @@ body {
 
 .btn__card--product {
   bottom: -11px;
-  right: 27px;
+  right: 4px;
 }
 
 .btn__carusel {
@@ -529,20 +529,21 @@ body {
   height: 608px;
   margin: 0 auto;
   color: #fff;
+  overflow-x: hidden;
+}
+
+.carusel__wrapper {
+  position: relative;
+  transition: transform 1000ms ease;
 }
 
 .carusel__item {
   position: absolute;
-  display: none;
-}
-
-.carusel__item--active {
-  display: block;
-  animation: 4s;
+  display: inline-block;
 }
 
 .carusel__img {
-  width: 100%;
+  width: 100vw;
   height: 608px;
   object-fit: cover;
 }

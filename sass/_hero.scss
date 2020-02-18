@@ -241,20 +241,21 @@
 	height: 608px;
 	margin: 0 auto;
 	color: $color-white;
+	overflow-x: hidden;
+}
+
+.carusel__wrapper {
+	position: relative;
+	transition: transform 1000ms ease;
 }
 
 .carusel__item {
 	position: absolute;
-	display: none;
-	
-	&--active {
-		display: block;
-		animation: 4s;
-	}
+	display: inline-block;
 }
 
 .carusel__img {
-	width: 100%;
+	width: 100vw;
 	height: 608px;
 	object-fit: cover;
 }
