@@ -119,6 +119,11 @@
 	border: $color-darkGray solid 1px;
 	padding: 7px;
 	border-radius: 50%;
+
+	&:hover {
+		color: $color-hoverRed;
+		border-color: $color-hoverRed;
+	}
 }
 
 .menu {
@@ -539,7 +544,7 @@
 
 @media (min-width: 320px) and (max-width: 400px) {
 	.carusel__caption {
-		top: 60px;
+		top: 160px;
 	}
 
 	.carusel__text--for {

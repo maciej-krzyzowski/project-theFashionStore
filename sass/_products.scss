@@ -30,19 +30,15 @@
 .small-carusel__men {
 	display: none;
 	width: 100%;
-
-	&--active {
-		display: inline-block;
-	}
 }
 
 .small-carusel__women {
 	display: none;
 	width: 100%;
+}
 
-	&--active {
-		display: inline-block;
-	}
+.small-carusel__active {
+	display: inline-block;
 }
 
 
@@ -130,22 +126,16 @@
 
 	.small-carusel__men {
 		display: none;
-	
-		&--active {
-			display: flex;
-			flex-direction: column;
-			width: 100%;
-		}
 	}
-
+	
 	.small-carusel__women {
 		display: none;
+	}
 	
-		&--active {
-			display: flex;
-			flex-direction: column;
-			width: 100%;
-		}
+	.small-carusel__active {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
 	}
 
 	.products__wrapper {
@@ -162,11 +152,11 @@
 		}
 	}
 
-	.small-carusel {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-	}
+	// .small-carusel {
+	// 	display: flex;
+	// 	flex-direction: column;
+	// 	width: 100%;
+	// }
 
 	.products__img {
 		width: 90%;

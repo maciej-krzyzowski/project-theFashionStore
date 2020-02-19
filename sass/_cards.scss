@@ -44,12 +44,13 @@
 	margin: 37px 12px;
 }
 
-.small-carusel__cards {
+.small-carusel__wrapper {
 	width: 100%;
 	display: none;
-	&--active {
-		display: inline-block;
-	}
+}
+
+.small-carusel__active {
+	display: inline-block;
 }
 
 .card {
@@ -192,15 +193,16 @@
 		display: none;
 	}
 
-	.small-carusel__cards {
+	.small-carusel__wrapper {
 		display: none;
-		&--active {
-			display: flex;
-			flex-direction: column;
-			width: 100%;
-		}
 	}
 
+	.small-carusel__active {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	
 	.cards__header {
 		margin-top: 65px;
 	}
