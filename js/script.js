@@ -20,12 +20,11 @@ button();
 // CARUSEL 
 
 const carusel = () => {
+    let i = 0;
     const carusel = document.querySelector('.carusel__wrapper');
     const slides = Array.from(carusel.children);
     const nextButton = document.querySelector('.btn__carusel--right');
     const prevButton = document.querySelector('.btn__carusel--left');
-    let i = 0;
-
     const slideWidth = slides[0].getBoundingClientRect().width;
 
     const slidePosition = (slide, index) => {
@@ -51,31 +50,28 @@ const carusel = () => {
         };
     };
 
-    const caruselInterval = () => {
-
-        const allClearIterval = () => {
-            for (var i = 1; i < 99999; i++);
+    const allClearInterval = () => {
+        for (var i = 1; i < 99999; i++) {
             window.clearInterval(i);
-        };
-
-        const interval = () => setInterval(() => {
-            changeRight();
-        }, 3000);
-
-        allClearIterval();
-        interval();
+        }
     }
 
-    caruselInterval();
+    const interval = () => setInterval(() => {
+        changeRight();
+    }, 3500);
+
+    interval();
 
     nextButton.addEventListener('click', () => {
+        allClearInterval();
         changeRight();
-        caruselInterval();
+        interval();
     });
 
     prevButton.addEventListener('click', () => {
+        allClearInterval();
         changeLeft();
-        caruselInterval();
+        interval();
     });
 };
 
@@ -84,11 +80,11 @@ carusel();
 // SMALLCARUSEL 
 
 const smallCarusel = (carusel, buttonWrapper) => {
+    let i = 0;
     const slides = Array.from(carusel.children)
     const nextButton = buttonWrapper.querySelector('.btn__small-carusel--right');
     const prevButton = buttonWrapper.querySelector('.btn__small-carusel--left');
     const active = 'small-carusel__active';
-    let i = 0;
 
     nextButton.addEventListener('click', () => {
         if (i == 0 || i < slides.length - 1) {
