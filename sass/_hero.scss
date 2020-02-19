@@ -246,7 +246,7 @@
 	height: 608px;
 	margin: 0 auto;
 	color: $color-white;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 .carusel__wrapper {
@@ -423,7 +423,6 @@
 	}
 
 	.navbar__logo {
-		position: relative;
 		left: -25px;
 		top: 20px;
 		height: 102px;
@@ -513,7 +512,6 @@
 
 	.carusel {
 		z-index: 0;
-		overflow-y: hidden;
 	}
 
 	.carusel__img {
