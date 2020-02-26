@@ -136,3 +136,15 @@ const cardsCarusel = () => {
 menCarusel();
 womenCarusel();
 cardsCarusel();
+
+var str = 'A\uD835\uDC68B\uD835\uDC69C\uD835\uDC6A';
+
+for (var v of str) {
+    console.log(v);
+}
+// "A"
+// "\uD835\uDC68"
+// "B"
+// "\uD835\uDC69"
+// "C"
+// "\uD835\uDC6A"
