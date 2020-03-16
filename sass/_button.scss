@@ -8,6 +8,10 @@
 	&:hover {
 		background-color: $color-hoverRed;
 	}
+
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 .btn__search {
@@ -159,7 +163,7 @@
 
 	.btn__submit {
 		font-size: 16px;
-		padding: 21px 13px;
+		padding: 21px 13px 20px;
 		width: 25%;
 	}
 }
