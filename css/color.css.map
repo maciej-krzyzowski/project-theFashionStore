@@ -1,9 +1,0 @@
-{
-	"version": 3,
-	"file": "color.css",
-	"sources": [
-		"../sass/color.scss"
-	],
-	"names": [],
-	"mappings": ""
-}
